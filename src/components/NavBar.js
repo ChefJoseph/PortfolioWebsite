@@ -54,7 +54,11 @@ function NavBar() {
                     <li className="nav-item"><a className="nav-link" href="#about-scroll">About</a></li>
                     <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
                     <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-                    <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF</a></li>
+                    <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
+                    <i className="fa-solid fa-arrow-down-to-line"></i></a>
+ 
+ 
+ </li>
                 </ul>
             </div>
         {/* social links  */}
