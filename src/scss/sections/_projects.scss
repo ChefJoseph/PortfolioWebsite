@@ -1,0 +1,37 @@
+// 
+// Projects
+// 
+
+.projects-section {
+    padding: 5rem 0;
+    background: linear-gradient(to bottom,
+    #{fade-out($black, 0.2)} 75%, #000);
+
+    .featured-text {
+        padding: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 0 0 2rem;
+           
+        }
+    }
+    .img {
+        height: 5rem;
+    }
+
+    .project-text {
+        padding: 3rem;
+        font-size: 90%;
+
+        @include media-breakpoint-up(lg) {
+            padding: 5rem;
+
+            hr {
+                border-color: $primary;
+                border-width: 0.25rem;
+                width: 30%;
+            }
+        }
+    }
+}
+
