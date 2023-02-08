@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfoliowebsite/public/static/css/main.8bacdad1.css",
+    "main.js": "/portfoliowebsite/public/static/js/main.c21cc07c.js",
+    "static/media/Olio.png": "/portfoliowebsite/public/static/media/Olio.253895716e6bd7398cab.png",
+    "static/media/primetime.png": "/portfoliowebsite/public/static/media/primetime.7a37fb31d3ca95f6ac84.png",
+    "static/media/bg-masthead.jpg": "/portfoliowebsite/public/static/media/bg-masthead.733fe6480d0aff46860c.jpg",
+    "static/media/LinkedinUI.png": "/portfoliowebsite/public/static/media/LinkedinUI.cbefaa27845fd92251c1.png",
+    "static/media/web3.png": "/portfoliowebsite/public/static/media/web3.165f72d7f87def5080d4.png",
+    "static/media/1_Resume_Joseph_Hirotsu_1_23.pdf": "/portfoliowebsite/public/static/media/1_Resume_Joseph_Hirotsu_1_23.0ca3a65f44307b1f8e6c.pdf",
+    "index.html": "/portfoliowebsite/public/index.html",
+    "main.8bacdad1.css.map": "/portfoliowebsite/public/static/css/main.8bacdad1.css.map",
+    "main.c21cc07c.js.map": "/portfoliowebsite/public/static/js/main.c21cc07c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bacdad1.css",
+    "static/js/main.c21cc07c.js"
+  ]
+}
