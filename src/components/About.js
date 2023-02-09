@@ -6,9 +6,9 @@ function About() {
         <div className="container px-4 px-lg-5">
             <div className="d-flex flex-column  justify-content-center" >
                 <div className="">
-                    <h1 className="text-white mb-4">About</h1>
+                    <h1 className="text-white mb-4">About me</h1>
                     <div className="text-start">
-                        <h2 className="text-white-50 mt-4">Technical Skills</h2>
+                        <h2 className="text-white-50 mt-4 mb-4">Technical Skills</h2>
                         <p className="text-white mb-3">
                             Frontend: JavaScript, TypeScript, React, HTML, React Native, Swift, Redux, Context API
                         </p>
@@ -21,12 +21,25 @@ function About() {
                         <p className="text-white mb-4">
                             Currently learning: Python, Flask, Web3, Data structures and Algorithms, Machine learning, Testing
                         </p>  
-                        <h2 className="text-white-50 mt-4">Education</h2>
-                        <p className="text-white mb-1" >
+                        <h2 className="text-white-50 mt-4 mb-4">Education</h2>
+                        <p className="text-white mb-3" >
                             Flatiron School, Fullstack Software Engineering
                         </p>  
-                        <p className="text-white">
-                            UCLA, BA
+                        <p className="text-white mb-4">
+                            UCLA, BA, History
+                        </p>
+                        <h2 className="text-white-50 mt-4 mb-4">Hobbies</h2>
+                        <p className="text-white mb-3" >
+                            Cooking: Italian, Japanese, Korean, Mexican, Latin, Middle East, Indian cuisines
+                        </p>  
+                        <p className="text-white mb-3" >
+                            History nerd: political, economical, and societal impacts across cultures, maps
+                        </p>  
+                        <p className="text-white mb-3" >
+                            Rooting for LA-based sports teams
+                        </p>
+                        <p className="text-white mb-3" >
+                            The outdoors: beach, mountain, nature
                         </p>
                     </div>
                 </div>

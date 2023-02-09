@@ -93,6 +93,18 @@
             }
         }
 
+        .social {
+            width: 168px;
+            display: flex;
+            justify-content: right;
+            position: relative;
+        }
+
+        .social-icon-container {
+            margin-left: 54px;
+        }
+       
+
         &.navbar-shrink {
             background-color: $white;
 

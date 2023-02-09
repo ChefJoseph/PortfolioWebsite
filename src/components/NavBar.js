@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import resume from '../assets/img/1_Resume_Joseph_Hirotsu_1_23.pdf'
+// import resume from '../assets/img/1_Resume_Joseph_Hirotsu_1_23.pdf'
+
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
     const [openSlide, setOpenSlide] = useState(false);
@@ -49,26 +50,28 @@ function NavBar() {
                 Menu
             </button>
         {/* Nav links */}
-            <div className="collapse navbar-collapse ms-auto" id="navbarResponsive">
+            <div className="collapse navbar-collapse " id="navbarResponsive">
                 <ul className="navbar-nav mx-auto">
                     <li className="nav-item"><a className="nav-link" href="#about-scroll">About</a></li>
                     <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
                     <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-                    <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
+                    {/* <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
                     <i className="fa-solid fa-arrow-down-to-line"></i></a>
- 
- 
- </li>
+                    </li> */}
+                    {/* <li className="nav-item"> <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jhirotsu@gmail.com" target="_blank">Email me</a></li> */}
+                   
                 </ul>
             </div>
         {/* social links  */}
-            <div className="d-none d-lg-block d-xl-block social d-flex justify-content-center ">
-                <a className="social-link mx-1" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
+            <div className="d-lg-block d-xl-block social">
+                <div className="social-icon-container">
+                <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
                     <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
                 </a>
                 <a className="social-link mx-1" target="_blank" rel="noreferrer" href="https://github.com/ChefJoseph" title="Github">
                     <i className="fab fa-github fa-xl" title="Github"></i>
                 </a>
+                </div>
             </div>
         </div>
     </nav>
