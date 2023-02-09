@@ -46,7 +46,7 @@ function Projects() {
                 <div className="col-xl-4 col-lg-5">
                     <div className="featured-text text-center text-lg-left">
                         <h4 className="text-white">Web3 Solidity App</h4>
-                        <p className="text-white-50 mb-0">A React app that connects to a wallet, writes data and performs transactions on the Ethereum blockchain</p>
+                        <p className="text-white-50 mb-0">A React app that connects to a wallet, writes data and writes contracts on the Ethereum blockchain</p>
                     </div>
                 </div>
             </div>
