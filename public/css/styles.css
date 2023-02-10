@@ -11152,10 +11152,10 @@ body {
 .contact-section .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
-  width: 3rem;
+  width: 1.5rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .contact-section .social a {
   text-align: center;

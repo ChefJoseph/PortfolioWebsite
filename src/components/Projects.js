@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import project2 from '../assets/img/primetime.png'
 import project1 from '../assets/img/Olio.png'
 import project3 from '../assets/img/LinkedinUI.png'
@@ -8,8 +9,15 @@ function Projects() {
   return (
     <section className="projects-section " id="projects">
         <div className="container px-4 px-lg-5">
-            <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div className="img-container col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={project1} alt="..." /></div>
+            <div className="row gx-0 mb-4 mb-lg-5 align-items-center justify-content-center">
+                <div className="img-container col-xl-6 col-lg-4 justify-content-center">
+                    <img className="img-fluid mb-3 mb-lg-0" src={project1} alt="..." />
+                    <div className="middle">
+                        <a href='https://github.com/ChefJoseph/OlioApp' target="_blank" rel="noreferrer" >
+                            <Button className="text border border-0">Github</Button>
+                        </a>
+                    </div>
+                </div>
                 <div className="col-xl-4 col-lg-5">
                     <div className="featured-text text-center text-lg-left">
                         <h4 className="text-white">Olio, The Olive Oil Store</h4>
@@ -19,19 +27,33 @@ function Projects() {
             </div>
         </div>
         <div className="container px-4 px-lg-5">
-            <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={project2} alt="..." /></div>
+            <div className="row gx-0 mb-4 mb-lg-5 align-items-center justify-content-center">
+                <div className="img-container col-xl-6 col-lg-4">
+                    <img className="img-fluid mb-3 mb-lg-0" src={project2} alt="..." />
+                    <div className="middle">
+                        <a href='https://github.com/ChefJoseph/StadiumApp-Frontend' target="_blank" rel="noreferrer" >
+                            <Button className="text border border-0">Github</Button>
+                        </a>
+                    </div>
+                </div>
                 <div className="col-xl-4 col-lg-5">
                     <div className="featured-text text-center text-lg-left">
-                        <h4 className="text-white">Primetime, Fullstack Food Delivery App</h4>
+                        <h4 className="text-white">Primetime, Mobile Fullstack Food Delivery App</h4>
                         <p className="text-white-50 mb-0">React Native/Rails - A web app created for ordering food at live sporting events, designed with accessibility in mind.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div className="container px-4 px-lg-5">
-            <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={project3} alt="..." /></div>
+            <div className="row gx-0 mb-4 mb-lg-5 align-items-center justify-content-center">
+                <div className="img-container col-xl-6 col-lg-4">
+                    <img className="img-fluid mb-3 mb-lg-0" src={project3} alt="..." />
+                    <div className="middle">
+                        <a href='https://github.com/ChefJoseph/LinkedIn-UI' target="_blank" rel="noreferrer" >
+                            <Button className="text border border-0">Github</Button>
+                        </a>
+                    </div>
+                </div>
                 <div className="col-xl-4 col-lg-5">
                     <div className="featured-text text-center text-lg-left">
                         <h4 className="text-white">LinkedIn UI Clone</h4>
@@ -41,8 +63,15 @@ function Projects() {
             </div>
         </div>
         <div className="container px-4 px-lg-5">
-            <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={project4} alt="..." /></div>
+            <div className="row gx-0 mb-4 mb-lg-5 align-items-center justify-content-center">
+                <div className="img-container col-xl-6 col-lg-4">
+                    <img className="img-fluid mb-3 mb-lg-0" src={project4} alt="..." />
+                    <div className="middle">
+                        <a href='https://github.com/ChefJoseph/ETHSolidityDapp' target="_blank" rel="noreferrer" >
+                            <Button className="text border border-0">Github</Button>
+                        </a>
+                    </div>
+                </div>
                 <div className="col-xl-4 col-lg-5">
                     <div className="featured-text text-center text-lg-left">
                         <h4 className="text-white">Web3 Solidity App</h4>

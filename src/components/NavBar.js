@@ -63,14 +63,14 @@ function NavBar() {
                 </ul>
             </div>
         {/* social links  */}
-            <div className="d-lg-block d-xl-block social">
+            <div className="social d-lg-block d-xl-block">
                 <div className="social-icon-container">
-                <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
-                    <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
-                </a>
-                <a className="social-link mx-1" target="_blank" rel="noreferrer" href="https://github.com/ChefJoseph" title="Github">
-                    <i className="fab fa-github fa-xl" title="Github"></i>
-                </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
+                        <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
+                    </a>
+                    <a className="social-link mx-1" target="_blank" rel="noreferrer" href="https://github.com/ChefJoseph" title="Github">
+                        <i className="fab fa-github fa-xl" title="Github"></i>
+                    </a>
                 </div>
             </div>
         </div>
