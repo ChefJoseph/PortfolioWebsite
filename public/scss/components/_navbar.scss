@@ -44,6 +44,9 @@
             }
         }
     }
+    .social {
+        display: none;
+    }
 
     @include media-breakpoint-up(lg) {
         padding-top: 1.5rem;
@@ -74,7 +77,37 @@
             }
         }
 
+        .social {
+            width: 167px;
+            display: flex;
+            justify-content: right;
+            position: relative;
+        }
         
+        .social {
+
+            a {
+                text-align: center;
+                height: 3rem;
+                width: 3rem;
+                border-radius: 100%;
+                line-height: 3rem;
+                color: fade-out($white, 0.4);
+                padding: 0 15px;
+    
+                &:hover {
+                    color: fade-out($white, 0.25);
+                }
+    
+                &:active {
+                    color: $white;
+                }
+            }
+        }
+        .social-icon-container {
+            margin-left: 54px;
+        }
+       
 
         &.navbar-shrink {
             background-color: $white;
@@ -108,27 +141,6 @@
 
                 &:hover {
                     color: $primary;
-                }
-            }
-            
-            .social {
-
-                a {
-                    text-align: center;
-                    height: 3rem;
-                    width: 3rem;
-                    border-radius: 100%;
-                    line-height: 3rem;
-                    color: fade-out($white, 0.4);
-                    padding: 0 15px;
-        
-                    &:hover {
-                        color: fade-out($white, 0.25);
-                    }
-        
-                    &:active {
-                        color: $white;
-                    }
                 }
             }
         }
