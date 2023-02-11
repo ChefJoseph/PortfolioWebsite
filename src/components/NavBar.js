@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 // import resume from '../assets/img/1_Resume_Joseph_Hirotsu_1_23.pdf'
 
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
-    const [openSlide, setOpenSlide] = useState(false);
-    const menuRef = useRef()
 
     useEffect(() => {
         const onScroll = () => {
@@ -17,21 +15,6 @@ function NavBar() {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
-
-    useEffect(() => {
-        const handleOutsideClicks = (e)=>{
-            if(openSlide && menuRef.current && !menuRef.current.contains(e.target)){
-              setOpenSlide(false);
-            }
-        }
-        document.addEventListener('mousedown', handleOutsideClicks)
-        return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener('mousedown', handleOutsideClicks);
-        };
-    })
-
-   
 
   return (
     <nav className= {scrolled ? "navbar-shrink navbar navbar-expand-lg navbar-light fixed-top": "navbar navbar-expand-lg navbar-light fixed-top"} id="mainNav">
@@ -46,15 +29,21 @@ function NavBar() {
                 aria-controls="navbarResponsive" 
                 aria-expanded="false" 
                 aria-label="Toggle navigation" 
-                ref={menuRef}>
+            >
                 Menu
             </button>
         {/* Nav links */}
             <div className="collapse navbar-collapse " id="navbarResponsive">
                 <ul className="navbar-nav mx-auto">
-                    <li className="nav-item"><a className="nav-link" href="#about-scroll">About</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#about-scroll" >About</a>
+                    </li>
+                    <li className="nav-item" >
+                        <a className="nav-link" href="#projects"  >Projects</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#contact" >Contact</a>
+                    </li>
                     {/* <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
                     <i className="fa-solid fa-arrow-down-to-line"></i></a>
                     </li> */}
