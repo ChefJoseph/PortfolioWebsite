@@ -25,7 +25,7 @@ function Footer() {
                                 <div className="small text-black-50">
                                   <OverlayTrigger
                                     rootClose
-                                    placement="right"
+                                    placement="bottom"
                                     trigger="click"
                                     overlay={popoverContent}>
                                     <Button variant="success" type="button"
