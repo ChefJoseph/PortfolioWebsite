@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 // import resume from '../assets/img/1_Resume_Joseph_Hirotsu_1_23.pdf'
 
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
+    const wrapperRef = useRef(null);
+    useOutsideAlerter(wrapperRef);
 
     useEffect(() => {
         const onScroll = () => {
@@ -16,13 +18,37 @@ function NavBar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
+    const handleHideMenu = () => {
+        const elem = document.querySelector("#navbarResponsive");
+        elem.classList.remove('show');
+
+      };
+
+    function useOutsideAlerter() {
+      useEffect(() => {
+        // if clicked outside element
+        function handleClickOutside(event) {
+          if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+            const elem = document.querySelector("#navbarResponsive");
+            elem.classList.remove('show');
+          }
+        }
+        // Bind the event listener
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+          // Unbind the event listener on clean up
+          document.removeEventListener("mousedown", handleClickOutside);
+        };
+      }, [wrapperRef]);
+    }
+
   return (
-    <nav className= {scrolled ? "navbar-shrink navbar navbar-expand-lg navbar-light fixed-top": "navbar navbar-expand-lg navbar-light fixed-top"} id="mainNav">
+    <nav className= {scrolled ? "navbar-shrink navbar navbar-expand-lg navbar-light fixed-top": "navbar navbar-expand-lg navbar-light fixed-top"} id="mainNav" ref={wrapperRef}>
         <div className="container px-4 px-lg-5">
         {/* Home Button  */}
             <a className="navbar-brand" href="#page-top">Joseph Hirotsu</a>
         {/* Mobile View Menu Toggle */}
-            <button className="navbar-toggler navbar-toggler-right " 
+            <button className="navbar-toggler navbar-toggler-right shadow-sm" 
                 type="button" 
                 data-bs-toggle="collapse" 
                 data-bs-target="#navbarResponsive" 
@@ -36,13 +62,13 @@ function NavBar() {
             <div className="collapse navbar-collapse " id="navbarResponsive">
                 <ul className="navbar-nav mx-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#about-scroll" >About</a>
+                        <a className="nav-link" href="#about-scroll" onClick={handleHideMenu}>About</a>
                     </li>
                     <li className="nav-item" >
-                        <a className="nav-link" href="#projects"  >Projects</a>
+                        <a className="nav-link" href="#projects" onClick={handleHideMenu}>Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#contact" >Contact</a>
+                        <a className="nav-link" href="#contact" onClick={handleHideMenu}>Contact</a>
                     </li>
                     {/* <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
                     <i className="fa-solid fa-arrow-down-to-line"></i></a>
