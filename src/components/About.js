@@ -33,7 +33,7 @@ function About() {
                             Cooking: Italian, Japanese, Korean, Mexican, Latin, Middle East, Indian cuisines
                         </p>  
                         <p className="text-white mb-3" >
-                            History nerd: political, economical, and societal impacts across cultures, maps
+                            History nerd: political, economical, and social impacts across cultures; maps and geography
                         </p>  
                         <p className="text-white mb-3" >
                             Rooting for LA-based sports teams
