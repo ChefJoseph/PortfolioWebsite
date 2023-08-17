@@ -80,6 +80,7 @@ function NavBar() {
         {/* social links  */}
             <div className="social d-lg-block d-xl-block">
                 <div className="social-icon-container">
+                    <a className="nav-link" href="Resume_Joseph_Hirotsu_Curr.pdf" target="_blank">Resume</a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
                         <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
                     </a>
