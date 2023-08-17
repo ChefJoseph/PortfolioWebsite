@@ -26,13 +26,13 @@ function About() {
                             Software Engineer - Japanese American National Museum, discovernikkei.org
                         </p>  
                         <p className="text-white mb-4">
-                            Working remotely on an international team to redesign, update, and debug the discovernikkei.org website
+                                Working remotely on an international team to redesign, update, and debug the discovernikkei.org website
                         </p>
                         <p className="text-white mb-4">
-                            Contributing to the development and migration to a dynamic website by utilizing design on Figma to code JS/HTML templates, implementing acceptance testing, deploying, ensuring its maintenance, and managing version control.
+                                Contributing to the development and migration to a dynamic website by utilizing design on Figma to code JS/HTML templates, implementing acceptance testing, deploying, ensuring its maintenance, and managing version control.
                         </p>
                         <p className="text-white mb-4">
-                            Technologies: Python/Django, HTML template, Redis, Docker, Postgresql, AWS, Google Analytics, Sass, Figma, Git
+                                Technologies: Python/Django, HTML template, Redis, Docker, Postgresql, AWS, Google Analytics, Sass, Figma, Git
                         </p>
                         <h2 className="text-white-50 mt-4 mb-4">Education</h2>
                         <p className="text-white mb-3" >
