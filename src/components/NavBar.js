@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-// import resume from '../assets/img/1_Resume_Joseph_Hirotsu_1_23.pdf'
+import resume from '../assets/Resume_Joseph_Hirotsu_Curr.pdf'
 
 function NavBar() {
     const [scrolled, setScrolled] = useState(false);
@@ -39,7 +39,7 @@ function NavBar() {
           // Unbind the event listener on clean up
           document.removeEventListener("mousedown", handleClickOutside);
         };
-      }, [wrapperRef]);
+      }, []);
     }
 
   return (
@@ -80,11 +80,13 @@ function NavBar() {
         {/* social links  */}
             <div className="social d-lg-block d-xl-block">
                 <div className="social-icon-container">
-                    <a className="nav-link" href="../img/Resume_Joseph_Hirotsu_Curr.pdf" target="_blank">Resume</a>
+                    <a className="social-link resume-link" href={resume} target="_blank" rel="noreferrer">
+                        Resume
+                    </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
                         <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
                     </a>
-                    <a className="social-link mx-1" target="_blank" rel="noreferrer" href="https://github.com/ChefJoseph" title="Github">
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://github.com/ChefJoseph" title="Github">
                         <i className="fab fa-github fa-xl" title="Github"></i>
                     </a>
                 </div>

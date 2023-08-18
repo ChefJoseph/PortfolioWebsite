@@ -21,6 +21,7 @@
     }
 
     .navbar-brand {
+        width: 174px;
         color: $black;
         font-weight: 700;
         padding: 0.9rem 0;
@@ -83,10 +84,10 @@
         }
 
         .social {
-            width: 167px;
-            display: flex;
-            justify-content: right;
-            position: relative;
+            width: 220px;
+            // display: flex;
+            // justify-content: right;
+            // position: relative;
         }
         
         .social {
@@ -94,7 +95,7 @@
             a {
                 text-align: center;
                 height: 3rem;
-                width: 3rem;
+                // width: 3rem;
                 border-radius: 100%;
                 line-height: 3rem;
                 color: fade-out($white, 0.4);
@@ -110,7 +111,13 @@
             }
         }
         .social-icon-container {
-            margin-left: 54px;
+            display: flex;
+            justify-content: right;
+            position: relative;
+        }
+        .resume-link {
+            text-decoration: none;
+            width:100%;
         }
        
 
@@ -142,6 +149,14 @@
             }
 
             .social-link {
+                color: $black;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .resume-link {
                 color: $black;
 
                 &:hover {
