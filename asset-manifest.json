@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfoliowebsite/static/css/main.17919581.css",
-    "main.js": "/portfoliowebsite/static/js/main.3e81af46.js",
+    "main.css": "/portfoliowebsite/static/css/main.d4a4cba1.css",
+    "main.js": "/portfoliowebsite/static/js/main.acb2fe08.js",
     "static/media/Olio.png": "/portfoliowebsite/static/media/Olio.253895716e6bd7398cab.png",
     "static/media/primetime.png": "/portfoliowebsite/static/media/primetime.7a37fb31d3ca95f6ac84.png",
     "static/media/bg-masthead.jpg": "/portfoliowebsite/static/media/bg-masthead.733fe6480d0aff46860c.jpg",
     "static/media/LinkedinUI.png": "/portfoliowebsite/static/media/LinkedinUI.cbefaa27845fd92251c1.png",
     "static/media/web3.png": "/portfoliowebsite/static/media/web3.165f72d7f87def5080d4.png",
+    "static/media/Resume_Joseph_Hirotsu_Curr.pdf": "/portfoliowebsite/static/media/Resume_Joseph_Hirotsu_Curr.9d34bccd599cdfc1b171.pdf",
     "index.html": "/portfoliowebsite/index.html",
-    "main.17919581.css.map": "/portfoliowebsite/static/css/main.17919581.css.map",
-    "main.3e81af46.js.map": "/portfoliowebsite/static/js/main.3e81af46.js.map"
+    "main.d4a4cba1.css.map": "/portfoliowebsite/static/css/main.d4a4cba1.css.map",
+    "main.acb2fe08.js.map": "/portfoliowebsite/static/js/main.acb2fe08.js.map"
   },
   "entrypoints": [
-    "static/css/main.17919581.css",
-    "static/js/main.3e81af46.js"
+    "static/css/main.d4a4cba1.css",
+    "static/js/main.acb2fe08.js"
   ]
 }
