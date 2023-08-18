@@ -70,19 +70,16 @@ function NavBar() {
                     <li className="nav-item">
                         <a className="nav-link" href="#contact" onClick={handleHideMenu}>Contact</a>
                     </li>
-                    {/* <li className="nav-item"><a className="nav-link" href={resume} target="_blank" rel="noreferrer" download="1_Resume_Joseph_Hirotsu_1_23.pdf" >Resume PDF
-                    <i className="fa-solid fa-arrow-down-to-line"></i></a>
-                    </li> */}
-                    {/* <li className="nav-item"> <a className="nav-link" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jhirotsu@gmail.com" target="_blank">Email me</a></li> */}
-                   
+                    <li className="nav-item">
+                        <a className="nav-link" href={resume} target="_blank" rel="noreferrer">
+                            Resume
+                        </a>
+                    </li>
                 </ul>
             </div>
         {/* social links  */}
             <div className="social d-lg-block d-xl-block">
                 <div className="social-icon-container">
-                    <a className="social-link resume-link" href={resume} target="_blank" rel="noreferrer">
-                        Resume
-                    </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/joseph-hirotsu/" title="Linkedin">
                         <i className="fab fa-linkedin fa-xl" title="Linkedin"></i>
                     </a>
